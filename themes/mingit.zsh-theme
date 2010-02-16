@@ -34,4 +34,6 @@ if [[ $EMACS = t ]] then
     ZSH_THEME_GIT_PROMPT_SUFFIX=" "
     ZSH_THEME_GIT_PROMPT_DIRTY="!"
     ZSH_THEME_GIT_PROMPT_UNTRACKED="?"
+    DISABLE_LS_COLORS="true"
+    # unalias ls # how to do this?
 fi
