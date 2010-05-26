@@ -21,6 +21,7 @@ alias -- -='cd -'
 
 # Super user
 alias _='sudo'
+alias ss='sudo su -'
 
 #alias g='grep -in'
 
@@ -50,6 +51,3 @@ alias etts='mate app config lib db public script spec test vendor/plugins vendor
 
 # Editor Ruby file in TextMate
 alias mr='mate CHANGELOG app config db lib public script spec test'
-
-# "Delete" files to Trash
-alias del='/Developer/Tools/MvMac \!* ~/.Trash'

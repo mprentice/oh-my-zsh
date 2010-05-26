@@ -75,3 +75,6 @@ open_lighthouse_ticket () {
 }
 
 alias lho='open_lighthouse_ticket'
+
+# move files to trash
+function trash() { mv $* ~/.Trash ; }
