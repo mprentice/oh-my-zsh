@@ -15,7 +15,7 @@ function virtualenv_info {
 
 function my_git_info () {
     ref=$(git_prompt_info) || return
-    echo "git:$ref"
+    echo "±:$ref"
 }
 
 # PROMPT='
