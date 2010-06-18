@@ -21,10 +21,6 @@ function preexec {
   title $cmd[1]:t "$cmd[2,-1]"
 }
 
-function remote_console() {
-  /usr/bin/env ssh $1 "( cd $2 && ruby script/console production )"
-}
-
 function zsh_stats() {
   history | awk '{print $2}' | sort | uniq -c | sort -rn | head
 }
