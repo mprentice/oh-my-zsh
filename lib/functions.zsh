@@ -1,15 +1,16 @@
 ## fixme, i duplicated this in xterms - oops
-function title {
-  if [[ $TERM == "screen" ]]; then
-    # Use these two for GNU Screen:
-    print -nR $'\033k'$1$'\033'\\\
+# not working for me, see custom/screen.zsh
+# function title {
+#   if [[ $TERM == "screen" ]]; then
+#     # Use these two for GNU Screen:
+#     print -nR $'\033k'$1$'\033'\\\
 
-    print -nR $'\033]0;'$2$'\a'
-  elif [[ ($TERM =~ "^xterm") ]] || [[ ($TERM == "rxvt") ]]; then
-    # Use this one instead for XTerms:
-    print -nR $'\033]0;'$*$'\a'
-  fi
-}
+#     print -nR $'\033]0;'$2$'\a'
+#   elif [[ ($TERM =~ "^xterm") ]] || [[ ($TERM == "rxvt") ]]; then
+#     # Use this one instead for XTerms:
+#     print -nR $'\033]0;'$*$'\a'
+#   fi
+# }
 
 function precmd {
   title zsh "$PWD"
